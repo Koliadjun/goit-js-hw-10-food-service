@@ -1,7 +1,7 @@
 
 import menuItemTpl from './templates/menu-items.hbs';
 import menu from './menu.json';
-import { qualifiedTypeIdentifier } from 'babel-types';
+
 const Theme = {
     LIGHT: 'light-theme',
     DARK: 'dark-theme',
@@ -9,10 +9,7 @@ const Theme = {
 };
 
 const render = () => {
-
-
     refs.menu.insertAdjacentHTML('beforeend', menuItemTpl(menu));
-
 };
 
 const refs = {
